@@ -198,7 +198,8 @@ class FaceRecognitionModel:
                 'best_model.h5',
                 save_best_only=True,
                 save_weights_only=False
-            )
+            ),
+            CustomModelSaver()  # This will save as .pkl after each epoch
         ]
         
         # Train the model
